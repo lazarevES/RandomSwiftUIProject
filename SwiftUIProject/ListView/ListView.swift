@@ -16,7 +16,7 @@ struct ListView: View {
 				ListRowView(persone: persone)
 			}
 		}
-		.navigationTitle("Персонажи Mortal combat")
+		.navigationTitle("Персонажи MK")
 	}
 }
 
