@@ -28,18 +28,28 @@ struct ContentView: View {
 						.padding(.all)
 						.background(.yellow)
 				}
+				
 				Text("Основной текст о том как мне понятно что же я делаю (никак) \n Значение слайдера - \(value)")
 					.font(.body)
 					.fontWeight(.regular)
 					.multilineTextAlignment(.center)
 					.padding(.horizontal)
+				
 				Slider(value: $value, in: 0.0...100.0)
 				
 				NavigationLink {
 					MainView()
 				} label: {
-					Text("Перейти на следующее задание")
+					Text("Перейти на 3 задание")
 				}
+				.padding(.top, 20)
+				
+				NavigationLink {
+					ListView()
+				} label: {
+					Text("Перейти на 4 задание")
+				}
+				.padding(.top, 20)
 			}
 			
 			.alert(
